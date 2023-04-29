@@ -1,10 +1,60 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import { BrowserRouter, Route, Routes, useActionData } from 'react-router-dom'
+import { MainLoading } from './components/loading'
+import Home from './pages/home'
+import { Layout } from './pages/layouts'
+
+
+// style
+import './style/main.css'
+import { GridDots } from './components/tools'
+import NavBar from './components/navbar'
+import About from './pages/about'
+import Projects from './pages/projects'
+import Contacts from './pages/contacts'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
 )
+
+function App() {
+  const [doneLoading, setDoneLoading] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setDoneLoading(true)
+    }, 11000)
+  }, [])
+  return (
+
+    <>
+      <GridDots />
+      {doneLoading ? <RouteLayout /> : <MainLoading />}
+
+
+    </>
+  )
+}
+
+function RouteLayout() {
+  return (
+    <>
+
+      <BrowserRouter>
+      <NavBar />
+
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path='about' element={<About />} />
+            <Route path='projects' element={<Projects />} />
+            <Route path='contact' element={<Contacts />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
+}

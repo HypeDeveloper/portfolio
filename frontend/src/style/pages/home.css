@@ -1,0 +1,151 @@
+.CodeBlock{
+    width: 100%;
+    /* background: var(--mainBg); */
+}
+.codeWrap{
+    padding: 0px 90px 20px;
+}
+
+/* Typed */
+.textBox{
+    display: none;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 15px;
+}
+.box_TextBox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dotCount{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 3px;
+    zoom: 80%;
+}
+.textType{
+    padding: 5px 2px;
+    /* background: rgba(255, 255, 255, 0.466); */
+    border-radius: 10px;
+    font-size: var(--codeText-size);
+    color: white;
+    font-weight: 600;
+}
+
+.cusourClass{
+    animation: cusourClass 1s 0s infinite ease-in;
+    font-weight: 800;
+}
+
+
+
+/* graphSec */
+.graphSec{
+    display: none;
+    padding:  0px 90px 20px;
+    /* background-color: var(--mainBg); */
+    gap: 17px;
+}
+.grapicLine{
+    width: 4px;
+    background: white;
+}
+.completBox{
+    text-align: right;
+    float : right;
+    /* width: 60%; */
+}
+.completBox p{
+    font-size: 1.2rem;
+}
+
+/* animation */
+@keyframes cusourClass {
+    50%{
+        opacity: 0;
+    }
+}
+
+
+
+
+.heroOne_Wrap{
+    padding: 50px 100px;
+}
+.animBox_one{
+    padding-bottom: 40px;
+}
+.animBox_one .topName {
+    margin-top: 130px;
+    pointer-events: all;
+    transform: translateY(100px);
+    pointer-events: all;
+}
+
+.AnimeName:nth-child(1){
+    /* opacity: 0.3; */
+    /* -webkit-text-stroke: 1px white; */
+    color:#FF005C;
+
+
+}
+.AnimeName:nth-child(2){
+    /* opacity: 0.6; */
+    /* -webkit-text-stroke: 0.4px white; */
+    color: #5CFF42;
+}
+.AnimeName{
+    margin-top: -300px;
+    font-size: 14rem;
+    transition: 1s ease;
+    pointer-events: all;
+}
+.topName{
+    width: 100%;
+}
+.animBox_one:hover .AnimeName{
+    margin-top: -280px;
+    font-size: 14rem;
+    transition: 1s ease;
+}
+.bottomName{
+    margin-top: 30px;
+}
+.bottomName h1{
+    display: flex;
+}
+.bottomName h1 span h1{
+    color: #5CFF42;
+}
+.contactSec h1:nth-child(2){
+    margin: -100px 0 0;
+    display: flex;
+}
+.contactSec h1:nth-child(2) span h1{
+    color: #5CFF42;
+}
+
+.socials{
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+.socialBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.boxSocial{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background: #5CFF42;
+}
+
+.inpTop{
+    display: flex;
+}

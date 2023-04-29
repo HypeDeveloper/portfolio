@@ -1,0 +1,12 @@
+lockfileVersion: '6.0'
+
+dependencies:
+  gsap:
+    specifier: ^3.11.5
+    version: 3.11.5
+
+packages:
+
+  /gsap@3.11.5:
+    resolution: {integrity: sha512-Q89nKCLgoX5xUjznh9LcaIUkz54k1voNucT1Rpf9SJNFIQznBwFqt5qUUQbeVInFyN/n18OUJkpeI6CNEDt74w==}
+    dev: false

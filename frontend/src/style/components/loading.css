@@ -1,0 +1,33 @@
+.loading_hero{
+    top: 0;
+    z-index: 100000;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.loading_hero {
+    width: 200px;
+    height: 100px;
+    /* background-color: red; */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading_hero div img{
+    width: 200px;
+    /* transform: translateY(-40px); */
+}
+
+
+
+.loadingNumber{
+    font-size: 5rem;
+}
+.loadcountWrap{
+    /* background: red; */
+    overflow: hidden;
+}

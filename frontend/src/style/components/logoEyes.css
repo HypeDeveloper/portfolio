@@ -1,0 +1,25 @@
+.eye{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 22px;
+}
+.logoEye_group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    gap: 20px;
+    width: fit-content;
+    zoom: 60%; /* Changeable*/
+    /* background-color: var(--mainBg); */
+}
+
+.eyeRight .eyeLeft {
+    height: 60px; /*default */
+    /* width: 10px; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

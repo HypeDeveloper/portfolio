@@ -1,0 +1,127 @@
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000000;
+    background-color: var(--mainBg);
+}
+
+.navgroup{
+    padding: 25px 60px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.hamSection{
+    pointer-events: all;
+}
+
+.hamIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+
+    gap: 8px;
+}
+.lineHam{
+    height: 5px;
+    width: 40px;
+    background: var(--hamColor);
+}
+
+.lineHam:nth-child(2){
+    width: 25px;
+}
+
+
+.navList{
+    height: 100vh;
+    width: 400px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100000;
+    background: var(--mainBg);
+    animation: navIn 1s  0s  forwards ;
+    box-shadow: -1px 0 20px  rgba(89, 84, 84, 0.208);
+}
+.navListWrap{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 130px 40px 0;
+}
+
+@keyframes navIn {
+    from{
+        transform: translateX(500px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.lineNav{
+    position: relative;
+
+}
+.lineNs:nth-child(1){
+    height: 8px;
+    width: 0%;
+    background: #FF005C;
+    position: absolute;
+    animation: navMoveback .5s  0.4s  forwards ;
+
+}
+.lineNs:nth-child(2){
+    height: 8px;
+    width: 0%;
+    background: #FFCA42;
+    position: absolute;
+    animation: navMoveback .5s  0.2s  forwards ;
+
+
+}
+.lineNs:nth-child(3){
+    height: 8px;
+    width: 0%;
+    background: #5CFF42;
+    position: absolute;
+    animation: navMoveback .5s  0s  forwards ;
+
+}
+
+.boxedNav{
+    pointer-events: all;
+}
+.boxedNav:hover .lineNs:nth-child(1){
+    animation: navMove .5s  0s  forwards ;
+}
+.boxedNav:hover .lineNs:nth-child(2){
+    animation: navMove .5s  0.2s  forwards ;
+}
+.boxedNav:hover .lineNs:nth-child(3){
+    animation: navMove .5s  .4s  forwards ;
+}
+
+@keyframes navMove {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes navMoveback {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+}

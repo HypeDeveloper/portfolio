@@ -1,0 +1,41 @@
+.propmtBox{
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999999;
+    backdrop-filter: blur(5px);
+    /* background: rgba(255, 255, 255, 0.159); */
+}
+
+.wrapBox{
+    height: fit-content;
+    width: 380px;
+    background: black;
+    border-radius: 20px;
+}
+
+.logoSection_pr{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px 30px;
+}
+.propsBttn{
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.propstext{
+    padding: 0px 50px 30px;
+}
+.propstext h1{
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+}
+.propstext p{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    padding: 20px 25px 0; 
+}

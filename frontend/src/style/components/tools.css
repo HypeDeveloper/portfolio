@@ -1,0 +1,38 @@
+.gridHolder{
+    height: 104vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: .6;
+    overflow: hidden;
+}
+
+.dots_grid{
+    /* margin: 1.4vw; */
+    height: 36.08px;
+    width: 36.08px;
+    /* background: rgb(50, 52, 64); */
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(10px);
+    pointer-events: all;
+}
+.dots_grid_main{
+    height: 3.5px;
+    width: 3.5px;
+    background: white;
+    border-radius: 10px;
+}
+
+
+@media screen  and (max-width: 600px){
+    .dots_grid{
+        margin: 5vw;
+    }
+}

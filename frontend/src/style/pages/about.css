@@ -1,0 +1,41 @@
+.aboutInfo_bottom{
+    margin-top: -40px;
+}
+.aboutInfo_bottom{
+    padding-left: 50px;
+}
+.aboutInfo_bottom h1{
+    display: flex;
+    font-size: 8rem;
+}
+.aboutInfo .topName h1{
+    /* margin-left: 50px; */
+    font-size: 14rem;
+}
+.aboutWrap, .aboutWrap_Pitch{
+    padding: 50px 100px;
+}
+.aboutWrap p{
+    line-height: 40px;
+    width: 600px;
+    padding-left: 50px;
+}
+
+.keynotes{
+    /* font-family: louis; */
+    font-weight: 600;
+}
+.skillBoxes{
+    padding-top: 50px;
+}
+.skillBox{
+    height: 130px;
+    width: 130px;
+    background: #FFCA42;
+    border-radius: 10px;
+}
+.wrapSkills{
+    display: grid;
+    grid-template-columns: 130px 130px 130px 130px;
+    gap: 60px;
+}
