@@ -7,12 +7,14 @@ import { Layout } from './pages/layouts'
 
 
 // style
-import './style/main.css'
+
 import { GridDots } from './components/tools'
 import NavBar from './components/navbar'
 import About from './pages/about'
 import Projects from './pages/projects'
 import Contacts from './pages/contacts'
+import './style/main.css'
+import './style/responsive.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

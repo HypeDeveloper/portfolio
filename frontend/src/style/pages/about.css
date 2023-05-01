@@ -39,3 +39,39 @@
     grid-template-columns: 130px 130px 130px 130px;
     gap: 60px;
 }
+@media screen and  (max-width: 600px) {
+    .aboutInfo_bottom{
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+    .aboutWrap, .aboutWrap_Pitch{
+        padding: 50px 0px;
+    }
+    .aboutInfo .topName h1{
+        /* margin-left: 50px; */
+        font-size: 4.5rem;
+    }
+    .aboutInfo_bottom h1{
+        display: flex;
+        font-size: 3rem;
+    }
+    .aboutInfo_bottom{
+        padding-left: 10px;
+    }
+    .aboutWrap p{
+        line-height: 40px;
+        width: initial;
+        padding-left: 0px;
+    }
+    .skillBox{
+        height:60px;
+        width:60px;
+        background: #FFCA42;
+        border-radius: 10px;
+    }
+    .wrapSkills{
+        display: grid;
+        grid-template-columns: 60px 60px 60px 60px;
+        gap: 15px;
+    }
+}

@@ -3,17 +3,17 @@ import { syntax, typeTab } from "../tools";
 export const homeCodes = {
     block1: [
         {
-            text: syntax('red', ' import ') + syntax('grn', ' hypeDeveloper ') + syntax('red', ' from ') + syntax('yel', ' "hype" '),
+            text: syntax('red', ' import ') + syntax('grn', ' hypeDev ') + syntax('red', ' from ') + syntax('yel', ' "hype" '),
             id: 'code1',
             next: 'code2',
         },
         {
-            text: syntax('red', ' let ') + syntax('grn', ' intro ') + '=' + syntax('yel', ' hypeDeveloper') + '.' + syntax('grn', 'greet') + syntax('blu', '(') + syntax('blu', ')'),
+            text: syntax('red', ' let ') + syntax('grn', ' intro ') + '=' + syntax('yel', ' hypeDev') + '.' + syntax('grn', 'greet') + syntax('blu', '(') + syntax('blu', ')'),
             id: 'code2',
             next: 'code3',
         },
         {
-            text: syntax('yel', ' hypeDeveloper') + '.' + syntax('grn', 'webBuild') + syntax('blu', '(') + syntax('grn', ' intro ') + syntax('blu', ')'),
+            text: syntax('yel', ' hypeDev') + '.' + syntax('grn', 'webBuild') + syntax('blu', '(') + syntax('grn', ' intro ') + syntax('blu', ')'),
             id: 'code3',
             next: 'code4',
         },
@@ -36,7 +36,7 @@ export const homeCodes = {
     ],
     block4: [
         {
-            text: syntax('red', ' let ') + syntax('grn', ' projects ') + '=' + syntax('yel', ' hypeDeveloper') + '.' + syntax('grn', 'projects') + syntax('blu', '(') + syntax('blu', ')'),
+            text: syntax('red', ' let ') + syntax('grn', ' projects ') + '=' + syntax('yel', ' hypeDev') + '.' + syntax('grn', 'projects') + syntax('blu', '(') + syntax('blu', ')'),
             id: 'code7',
             next: 'code8',
         },
@@ -51,7 +51,7 @@ export const homeCodes = {
             next: 'code10',
         },
         {
-            text:  typeTab() + typeTab() + typeTab() + syntax('yel', 'hypeDeveloper') + '.' + syntax('grn', 'generateWebGUI') + syntax('blu', '(') + syntax('pur', 'element') + syntax('blu', ')'),
+            text:  typeTab() + typeTab() + typeTab() + syntax('yel', 'hypeDev') + '.' + syntax('grn', 'generateWebGUI') + syntax('blu', '(') + syntax('pur', 'element') + syntax('blu', ')'),
             id: 'code10',
             next: 'code11',
         },
@@ -105,12 +105,12 @@ export const homeCodes = {
     ],
     block8: [
         {
-            text: syntax('pur', '>> ') + syntax('yel', ' hypeDeveloper') + '.' + syntax('grn', 'generateContacts') + syntax('blu', '(') + syntax('blu', ')'),
+            text: syntax('pur', '>> ') + syntax('yel', ' hypeDev') + '.' + syntax('grn', 'generateContacts') + syntax('blu', '(') + syntax('blu', ')'),
             id: 'code22',
             next: 'code23',
         },
         {
-            text: syntax('pur', '>> ') + syntax('yel', ' hypeDeveloper') + '.' + syntax('grn', 'generateFooter') + syntax('blu', '(') + syntax('blu', ')'),
+            text: syntax('pur', '>> ') + syntax('yel', ' hypeDev') + '.' + syntax('grn', 'generateFooter') + syntax('blu', '(') + syntax('blu', ')'),
             id: 'code23',
             next: 'code24',
         }
@@ -135,17 +135,17 @@ export const homeCodes = {
 export const aboutCodes = {
     block1: [
         {
-            text: syntax('red', ' import ') + syntax('grn', ' hypeDeveloper ') + syntax('red', ' from ') + syntax('yel', ' "hype" '),
+            text: syntax('red', ' import ') + syntax('grn', ' hypeDev ') + syntax('red', ' from ') + syntax('yel', ' "hype" '),
             id: 'code1',
             next: 'code2',
         },
         {
-            text: syntax('red', ' let ') + syntax('grn', ' about ') + '=' + syntax('yel', ' hypeDeveloper') + '.' + syntax('grn', 'getAbout') + syntax('blu', '(') + syntax('blu', ')'),
+            text: syntax('red', ' let ') + syntax('grn', ' about ') + '=' + syntax('yel', ' hypeDev') + '.' + syntax('grn', 'getAbout') + syntax('blu', '(') + syntax('blu', ')'),
             id: 'code2',
             next: 'code3',
         },
         {
-            text: syntax('yel', ' hypeDeveloper') + '.' + syntax('grn', 'webBuild') + syntax('blu', '(') + syntax('grn', ' about ') + syntax('blu', ')'),
+            text: syntax('yel', ' hypeDev') + '.' + syntax('grn', 'webBuild') + syntax('blu', '(') + syntax('grn', ' about ') + syntax('blu', ')'),
             id: 'code3',
             next: 'code4',
         },
@@ -168,7 +168,7 @@ export const aboutCodes = {
     ],
     block4: [
         {
-            text: syntax('yel', ' hypeDeveloper') + '.' + syntax('grn', 'generatePitch') + syntax('blu', '(') + syntax('blu', ')'),
+            text: syntax('yel', ' hypeDev') + '.' + syntax('grn', 'generatePitch') + syntax('blu', '(') + syntax('blu', ')'),
             id: 'code7',
             next: 'code8',
         }
@@ -187,6 +187,60 @@ export const aboutCodes = {
             text: syntax('pur', '>> ') + syntax('grn', ' Going Further '),
             id: 'code10',
             next: 'code11',
+        }
+    ],
+    block7: [
+        {
+            text: syntax('pur', ' >> ') + syntax('yel', 'Reach out to David ') + syntax('opp',' y(Yiew Contacts) n(Later)'),
+            id: 'code12',
+            next: 'code13',
+            yText: 'Opening Projects ---',
+            nText: 'You are really missing out 😱😱',
+        }
+    ],
+    block8: [
+        {
+            text: syntax('pur', '>> ') + syntax('grn', 'Done'),
+            id: 'code13',
+            next: 'code14',
+        }
+    ],
+}
+
+
+
+export const contactsCodes = {
+    block1: [
+        {
+            text: syntax('red', ' import ') + syntax('grn', ' hypeDev ') + syntax('red', ' from ') + syntax('yel', ' "hype" '),
+            id: 'code1',
+            next: 'code2',
+        },
+        {
+            text: syntax('red', ' let ') + syntax('grn', ' contacts ') + '=' + syntax('yel', ' hypeDev') + '.' + syntax('grn', 'getContacts') + syntax('blu', '(') + syntax('blu', ')'),
+            id: 'code2',
+            next: 'code3',
+        },
+        {
+            text: syntax('yel', ' hypeDev') + '.' + syntax('grn', 'webBuild') + syntax('blu', '(') + syntax('grn', ' contacts ') + syntax('blu', ')'),
+            id: 'code3',
+            next: 'code4',
+        },
+    ],
+    block7: [
+        {
+            text: syntax('pur', ' >> ') + syntax('yel', 'Download my Resume') + syntax('opp',' y(Yiew Contacts) n(Later)'),
+            id: 'code5',
+            next: 'code6',
+            yText: 'Opening Projects ---',
+            nText: 'You are really missing out 😱😱',
+        }
+    ],
+    block8: [
+        {
+            text: syntax('pur', '>> ') + syntax('grn', 'Done'),
+            id: 'code6',
+            next: 'code7',
         }
     ],
 }

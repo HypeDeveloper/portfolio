@@ -77,7 +77,7 @@ export default function Home() {
                             </div>
                         </div>
                         <p>
-                            A creative UI UX designer and Full Stack <br /> developer based in Nigeria.
+                            A creative UI UX designer and Full Stack   developer based in Nigeria.
                         </p>
                     </div>
                 </GraphicSection>
@@ -90,7 +90,7 @@ export default function Home() {
                 </section>
 
                 <GraphicSection id='code6' getId={currentId} next='code7' action={setId}>
-                    <br />
+                     
                 </GraphicSection>
 
                 <section className="CodeBlock">
@@ -100,8 +100,8 @@ export default function Home() {
                 </section>
 
                 <GraphicSection id='code13' getId={currentId} next='code14' action={setId}>
-                    <br />
-                    <br />
+                     
+                     
                 </GraphicSection>
 
                 <section className="CodeBlock">
@@ -140,8 +140,8 @@ export default function Home() {
                 </section>
 
                 <GraphicSection id='code21' getId={currentId} next='code22' action={setId}>
-                    <br />
-                    <br />
+                     
+                     
                 </GraphicSection>
 
                 <section className="CodeBlock">
@@ -151,7 +151,7 @@ export default function Home() {
                 </section>
 
                 <GraphicSection id='code24' getId={currentId} next='code25' action={setId}>
-                    <br />
+                     
                 </GraphicSection>
 
                 <section className="CodeBlock">
@@ -169,7 +169,7 @@ export default function Home() {
                             m<span className="grn"><h1>ee</h1></span>
                         </h1>
                         <p>
-                        You can reach me through the following <br /> handles or send me a mail.
+                        You can reach me through the following   handles or send me a mail.
                         </p>
                         
                         <div className="socials">

@@ -87,15 +87,9 @@
 }
 
 .AnimeName:nth-child(1){
-    /* opacity: 0.3; */
-    /* -webkit-text-stroke: 1px white; */
     color:#FF005C;
-
-
 }
 .AnimeName:nth-child(2){
-    /* opacity: 0.6; */
-    /* -webkit-text-stroke: 0.4px white; */
     color: #5CFF42;
 }
 .AnimeName{
@@ -109,7 +103,6 @@
 }
 .animBox_one:hover .AnimeName{
     margin-top: -280px;
-    font-size: 14rem;
     transition: 1s ease;
 }
 .bottomName{

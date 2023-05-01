@@ -1,8 +1,9 @@
 import { useState } from "react"
 import { aboutCodes } from "../components/util/codeBlocks"
-import { GraphicSection, TypePropmt, TypeText } from "../components/tools"
-import '../style/pages/about.css'
+import { Footer, GraphicSection, TypePropmt, TypeText } from "../components/tools"
 
+import '../style/responsive.css'
+import '../style/pages/about.css'
 
 export default function About() {
     const [currentId, setId] = useState('code1')
@@ -55,10 +56,10 @@ export default function About() {
                         </div>
                         <p>
                             A <span className="keynotes grn">creative designer and Full Stack developer </span> based in Nigeria. My coding journey started fully  in High School, were I leant the basic programing languages like <span className="keynotes red">Python, JavaScript and C#</span>.
-                            <br />                            <br />
+                                                          
 
                             Going further,  i <span className="keynotes yel">worked with FirstClassPilot as a junior Frontend developer </span>and during my stay their i honed my skills in <span className="keynotes grn">Backend dev and Ui / Ux designs</span>
-                            <br />                            <br />
+                                                          
 
                             I am also open to for branding and full-stack web development
                         </p>
@@ -73,7 +74,7 @@ export default function About() {
                 </section>
 
                 <GraphicSection id='code6' getId={currentId} next='code7' action={setId}>
-                    <br />
+                     
                 </GraphicSection>
 
                 <section className="CodeBlock">
@@ -85,10 +86,10 @@ export default function About() {
                 <GraphicSection id='code8' getId={currentId} next='code9' action={setId}>
                     <div className="aboutWrap_Pitch">
                         <h2>Ok, lets get started.</h2>
-                        
+
                         <p>
-                        I have an amazing skills set which i use to deliver  <br />
-top class products to my clients which are
+                            I have an amazing skills set which i use to deliver   
+                            top class products to my clients which are
                         </p>
 
                         <div className="skillBoxes">
@@ -103,10 +104,10 @@ top class products to my clients which are
                                 <div className="skillBox"></div>
                             </div>
                         </div>
-                            <br /><br /><br />br
+                           br
 
                         <p>
-                        And some of the projects i have worked on can testify to that
+                            And some of the projects i have worked on can testify to that
                         </p>
 
                     </div>
@@ -119,7 +120,41 @@ top class products to my clients which are
                     </div>
                 </section>
 
+                <GraphicSection id='code11' getId={currentId} next='code12' action={setId}>
+                    <div className="aboutWrap_Pitch">
+                        <h2>Here are what my clients have
+                            to say</h2>
+
+                        <p>
+                            After a job well done what's next testimonials
+                        </p>
+
+
+
+
+
+                        <h2>Finally,</h2>
+
+                        <p>
+                            I am confident that with the following skill set and ratings from   
+                            my past clients i will be able to find a spot on your  
+                            next gig
+                        </p>
+
+                    </div>
+                </GraphicSection>
+
+                <section className="CodeBlock">
+                    <div className="codeWrap">
+                        {TypeTexts(aboutCodes.block7, 'prop')}
+                        {TypeTexts(aboutCodes.block8, 'text')}
+                    </div>
+                </section>
+
+
             </main>
+            <Footer id='code14' getId={currentId} action={setId} />
+
         </>
     )
 }

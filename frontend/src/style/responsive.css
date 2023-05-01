@@ -1,0 +1,99 @@
+@media screen and  (max-width: 600px) {
+    code{
+        gap: 4px;
+        font-size: .95rem;
+        font-family: louis;
+    }
+    h2{
+        font-size: 2em;
+        font-family: louis;
+        color: var(--textColor)
+    }
+    h1{
+        font-size: 3.2rem;
+        font-family: stretch;
+        color: var(--textColor)
+    }
+    p{
+        font-size: 1.2rem;
+        font-family: louis;
+        color: var(--textColor);
+        line-height: 30px;
+    }
+    main{
+        padding: 130px 0 40px;
+        pointer-events: none;
+    }
+    .codeWrap{
+        padding: 0px 30px 20px;
+    }
+    .heroOne_Wrap{
+        padding: 50px 0px;
+    }
+    .graphSec{
+        padding:  0px 30px 20px;
+        gap: 17px;
+    }
+
+    .navgroup{
+        padding: 25px 28px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .animBox_one .topName {
+        margin-top: 170px;
+        pointer-events: all;
+        transform: translateY(-80px);
+        pointer-events: all;
+    }
+    .AnimeName{
+        margin-top: -94px;
+        font-size: 4.5rem;
+        transition: 1s ease;
+        pointer-events: all;
+    }
+    .animBox_one:hover .AnimeName{
+        margin-top: -88px;
+        transition: 1s ease;
+    }
+    .bottomName{
+        margin-top: -100px;
+    }
+    .completBox {
+        display: none;
+    }
+
+    .contactSec h1:nth-child(2){
+        margin: -10px 0 0;
+        display: flex;
+    }
+    .socials {
+        display: flex;
+        flex-direction: column;
+
+        gap:20px;
+        margin-top: 30px;
+    }
+    footer .footerWrap {
+        display: none;
+        justify-content: space-between;
+        padding: 20px 30px;
+    }
+    .navListWrap{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 130px 60px 0;
+    }
+    .navListWrap a div h2{
+        font-size: 3rem;
+    }
+    .socialBox{
+        zoom: 90%;
+        padding-left: 10px;
+    }
+
+    
+}
