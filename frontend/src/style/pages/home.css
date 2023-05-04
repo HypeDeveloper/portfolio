@@ -53,6 +53,8 @@
 .grapicLine{
     width: 4px;
     background: white;
+    height: 100%;
+    position: absolute;
 }
 .completBox{
     text-align: right;
@@ -76,44 +78,46 @@
 .heroOne_Wrap{
     padding: 50px 100px;
 }
-.animBox_one{
-    padding-bottom: 40px;
-}
-.animBox_one .topName {
-    margin-top: 130px;
-    pointer-events: all;
-    transform: translateY(100px);
-    pointer-events: all;
-}
 
 .AnimeName:nth-child(1){
-    color:#FF005C;
+    color: #FF005C;
 }
 .AnimeName:nth-child(2){
     color: #5CFF42;
 }
+.topName_name{
+    position: relative;
+    height: fit-content;
+    padding: 20px 0 0;
+}
 .AnimeName{
-    margin-top: -300px;
     font-size: 14rem;
-    transition: 1s ease;
-    pointer-events: all;
+    /* position: absolute; */
 }
-.topName{
-    width: 100%;
+.AnimeName:nth-child(2){
+    position: absolute;
+    top: 30px;
 }
-.animBox_one:hover .AnimeName{
-    margin-top: -280px;
-    transition: 1s ease;
+.AnimeName:nth-child(3){
+    position: absolute;
+    top: 40px;
 }
-.bottomName{
-    margin-top: 30px;
+.bottomName_home{
+    margin-top: -50px;
 }
-.bottomName h1{
+
+.bottomName_home h1{
     display: flex;
+    font-size: 10rem;
 }
-.bottomName h1 span h1{
+.bottomName_home h1 span h1{
     color: #5CFF42;
 }
+.animBox_one{
+    padding-bottom: 30px;
+}
+
+
 .contactSec h1:nth-child(2){
     margin: -100px 0 0;
     display: flex;
@@ -138,7 +142,9 @@
     border-radius: 10px;
     background: #5CFF42;
 }
-
+.socials{
+    padding:0 0 30px;
+}
 .inpTop{
     display: flex;
 }

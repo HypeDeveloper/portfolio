@@ -1,0 +1,81 @@
+.projectsCards_group{
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+}
+.imgBox_project{
+    width: 80vw;
+    overflow-x: hidden;
+    pointer-events: all;
+}
+.imgProj_wrap{
+    display: flex;
+    gap: 30px;
+    width: fit-content;
+}
+.ref_imgs_project{
+    height: 300px ;
+    width: 500px ; /*500*/
+    background: #FF7223;
+    margin-bottom: 30px;
+}
+.workInfo p{
+    width: 500px;
+    margin-bottom: 30px;
+}
+.worksWrap{
+    padding-top: 50px;
+}
+.fullInfo_work{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.techBttn{
+    padding: 0 40px;
+}
+.techStackWrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 190px;
+    gap: 20px;
+}
+.techBox{
+    height: 50px;
+    width: 50px;
+    background: green;
+}
+
+@media screen and (max-width: 600px) {
+
+    .imgProj_wrap{
+        display: flex;
+        gap: 10px;
+        width: fit-content;
+        padding-right: 40px;
+        padding-left: 0px;
+    }
+    .ref_imgs_project{
+        height: 240px ;
+        width: 280px ; /*500*/
+        background: #FF7223;
+        margin-bottom: 30px;
+    }
+    .imgBox_project{
+        width: 85vw;
+        overflow-x: scroll;
+        pointer-events: all;
+    }
+    .workInfo p{
+        width: 252px;
+        margin-bottom: 30px;
+    }
+    .fullInfo_work{
+        display: block;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+    .techBttn{
+        padding: 30px 20px;
+    }
+}

@@ -15,6 +15,7 @@ import Projects from './pages/projects'
 import Contacts from './pages/contacts'
 import './style/main.css'
 import './style/responsive.css'
+import { ProjectId } from './pages/projectId'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -52,7 +53,10 @@ function RouteLayout() {
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
             <Route path='about' element={<About />} />
-            <Route path='projects' element={<Projects />} />
+            <Route path='projects' element={<Layout />} >
+              <Route index element={<Projects/>}/>
+              <Route path=':id' element={<ProjectId/>}/>
+            </Route>
             <Route path='contact' element={<Contacts />} />
           </Route>
         </Routes>

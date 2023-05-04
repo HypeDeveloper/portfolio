@@ -99,7 +99,6 @@ export function TypePropmt(props) {
 
 
             window.onkeydown = (e) => {
-                console.log(currentPropmt_Man, id);
                 if (currentPropmt_Man === id) {
                     if (e.key == 'y') {
                         if(handleAlert){
@@ -160,7 +159,6 @@ export function GraphicSection(props) {
     const {children, next, action , getId, id , className} = props
     const graphSec = useRef()
     useEffect(() => {
-        console.log(getId);
         if (id == getId) {
             graphSec.current.style.display = 'flex'
             // graphSec.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
@@ -184,7 +182,13 @@ export function GraphicSection(props) {
         <>
             <section className={`graphSec ${className}`} ref={graphSec}>
                 <div className="grapicLine"></div>
-                {children}
+                {children? children :(
+                    <>
+                        <br />
+                        <br />
+                        <br />
+                    </>
+                )}
             </section>
         </>
     )
@@ -204,7 +208,6 @@ export function Footer(props){
     const { next, action , getId, id } = props
     const graphSec = useRef()
     useEffect(() => {
-        console.log(getId);
         if (id == getId) {
             graphSec.current.style.display = 'flex'
             // graphSec.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });

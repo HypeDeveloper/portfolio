@@ -20,7 +20,9 @@
     width: 600px;
     padding-left: 50px;
 }
-
+.aboutInfo{
+    position: relative;
+}
 .keynotes{
     /* font-family: louis; */
     font-weight: 600;
@@ -49,19 +51,24 @@
     }
     .aboutInfo .topName h1{
         /* margin-left: 50px; */
-        font-size: 4.5rem;
+        font-size: 4rem;
+    }
+    .aboutInfo_bottom{
+        padding-top: 30px;
     }
     .aboutInfo_bottom h1{
         display: flex;
         font-size: 3rem;
     }
     .aboutInfo_bottom{
-        padding-left: 10px;
+        padding-left: 0px;
     }
     .aboutWrap p{
-        line-height: 40px;
         width: initial;
         padding-left: 0px;
+    }
+    .topName{
+        padding-top: 20px;
     }
     .skillBox{
         height:60px;

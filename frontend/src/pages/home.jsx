@@ -59,7 +59,7 @@ export default function Home() {
                     <div className="heroOne_Wrap">
                         <h2>hello, i am</h2>
                         <div className="animBox_one">
-                            <div className="topName" id="topName">
+                            <div className="topName_name" id="topName">
                                 <h1 className="AnimeName " style={{ color: 'none' }}>
                                     David
                                 </h1>
@@ -70,7 +70,7 @@ export default function Home() {
                                     David
                                 </h1>
                             </div>
-                            <div className="bottomName">
+                            <div className="bottomName_home">
                                 <h1>
                                     Ok <span className="grn"><h1>oo</h1></span> ye
                                 </h1>
@@ -162,12 +162,9 @@ export default function Home() {
 
                 <GraphicSection id='code26' getId={currentId} next='code27' action={setId}>
                     <div className="heroOne_Wrap contactSec">
-                        <h1>
-                            Contact 
-                        </h1>
-                        <h1>
-                            m<span className="grn"><h1>ee</h1></span>
-                        </h1>
+                    <h1>Reach</h1>
+                            <h1>me via</h1>
+                        
                         <p>
                         You can reach me through the following   handles or send me a mail.
                         </p>

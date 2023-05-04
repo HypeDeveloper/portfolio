@@ -47,16 +47,17 @@ export default function Contacts(){
                 <GraphicSection id='code4' getId={currentId} next='code5' action={setId}>
                     <div className="aboutWrap_Pitch">
                         <h2>let’s build that idea </h2>
-
+                        <br />
+                        <br />
                         <div className="contactHeader">
-                            <h1>myy</h1>
-                            <h1>Contact</h1>
+                            <h1>Reach</h1>
+                            <h1>me via</h1>
                         </div>
 
                         <div className="socials">
                             <div className="socialBox">
                                 <div className="boxSocial"></div>
-                 yy               <p><a href="http://" target="_blank" rel="noopener noreferrer">@hypedeveloper</a></p>
+                                <p><a href="http://" target="_blank" rel="noopener noreferrer">@hypedeveloper</a></p>
                             </div>
 
                             <div className="socialBox">
@@ -69,7 +70,7 @@ export default function Contacts(){
                                
 
                         <p>
-                        Feel free to reach out to me on
+                        What are you wating for lets build that idea
                         </p>
 
                     </div>

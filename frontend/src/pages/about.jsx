@@ -56,10 +56,10 @@ export default function About() {
                         </div>
                         <p>
                             A <span className="keynotes grn">creative designer and Full Stack developer </span> based in Nigeria. My coding journey started fully  in High School, were I leant the basic programing languages like <span className="keynotes red">Python, JavaScript and C#</span>.
-                                                          
+                              <br />                              <br />                                                        
 
                             Going further,  i <span className="keynotes yel">worked with FirstClassPilot as a junior Frontend developer </span>and during my stay their i honed my skills in <span className="keynotes grn">Backend dev and Ui / Ux designs</span>
-                                                          
+                                <br />                                <br />                                                    
 
                             I am also open to for branding and full-stack web development
                         </p>

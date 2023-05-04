@@ -25,14 +25,15 @@
         pointer-events: none;
     }
     .codeWrap{
-        padding: 0px 30px 20px;
+        padding: 0px 25px 20px;
     }
     .heroOne_Wrap{
-        padding: 50px 0px;
+        padding: 50px 20px;
     }
     .graphSec{
-        padding:  0px 30px 20px;
+        padding:  0px 0px 20px 30px;
         gap: 17px;
+        zoom: 95%;
     }
 
     .navgroup{
@@ -42,25 +43,35 @@
         align-items: center;
         width: 100%;
     }
-    .animBox_one .topName {
-        margin-top: 170px;
-        pointer-events: all;
-        transform: translateY(-80px);
-        pointer-events: all;
+    .topName_name{
+        position: relative;
+        height: fit-content;
+        padding: 20px 0 0;
     }
     .AnimeName{
-        margin-top: -94px;
-        font-size: 4.5rem;
-        transition: 1s ease;
-        pointer-events: all;
+        font-size: 4rem;
+        /* position: absolute; */
     }
-    .animBox_one:hover .AnimeName{
-        margin-top: -88px;
-        transition: 1s ease;
+    .AnimeName:nth-child(2){
+        position: absolute;
+        top: 30px;
     }
-    .bottomName{
-        margin-top: -100px;
+    .AnimeName:nth-child(3){
+        position: absolute;
+        top: 40px;
     }
+    .bottomName_home{
+        margin-top: 20px;
+    }
+    .bottomName_home h1{
+        display: flex;
+        font-size: 2.8rem;
+    }
+
+
+
+    
+
     .completBox {
         display: none;
     }
@@ -85,15 +96,17 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        padding: 130px 60px 0;
+        padding: 130px 80px 0;
     }
     .navListWrap a div h2{
         font-size: 3rem;
     }
     .socialBox{
         zoom: 90%;
-        padding-left: 10px;
+        padding-left: 0px;
     }
 
-    
+    .socialBox p{
+        font-size: 1.1rem;
+    }
 }
