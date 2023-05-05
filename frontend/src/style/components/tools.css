@@ -29,10 +29,42 @@
     background: white;
     border-radius: 10px;
 }
-
+.pbuton{
+    display: flex;
+    /* justify-content: flex-end; */
+    /* position: absolute; */
+    z-index: 999999;
+    /* width: 100%; */
+    left: 0;
+    padding: 10px 0 20px;
+}
+.bttnwrap_Prop{
+    display: flex;
+    gap: 30px;
+    padding: 0 30px;
+}
+.bttnsProps{
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 10px;
+    width: fit-content;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+}
+.bttnsProps p{
+    color: white;
+    font-size: 1rem;
+}
 
 @media screen  and (max-width: 600px){
     .dots_grid{
         margin: 5vw;
+    }
+    .pbuton{
+        
+        margin-left: -30px;
     }
 }

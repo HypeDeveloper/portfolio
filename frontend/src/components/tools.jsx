@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from "react";
 
 let currentPropmt_Man = null
 
-export function Button(props){
-    return(
+export function Button(props) {
+    return (
         <>
             <button onClick={props.action}>
                 {props.text}
@@ -14,7 +14,7 @@ export function Button(props){
 }
 
 export function TypeText(props) {
-    const {action, next, getId , id, text} = props
+    const { action, next, getId, id, text } = props
 
     const textBox = useRef()
     const codes = useRef()
@@ -40,14 +40,14 @@ export function TypeText(props) {
         }
 
         function endCallback() {
-            if(action){
+            if (action) {
                 action(next)
                 type.hideCursor()
                 currentPropmt_Man = next
-            }else{
+            } else {
                 console.log('list done');
             }
-            
+
         }
 
     }, [getId])
@@ -67,11 +67,13 @@ export function TypeText(props) {
 }
 
 export function TypePropmt(props) {
-    const {action, setP, text, getId, id, currentP, handleAlert, yText, nText, next} = props
+    const { yBttnText, action, setP, text, getId, id, currentP, handleAlert, yText, nText, next, pressed } = props
 
     const textBox = useRef()
     const codes = useRef()
     const coText = useRef()
+    const pBttn = useRef()
+    const nBttn = useRef()
     useEffect(() => {
 
         setP(id)
@@ -90,18 +92,32 @@ export function TypePropmt(props) {
             type.text = text
             if (id == getId) {
                 textBox.current.scrollIntoView({ behavior: "smooth", block: "end", inline: "start" });
-                textBox.current.style.display = 'flex'
+                textBox.current.style.display = 'block'
                 type.start()
             }
         }
 
         function listenForKeys() {
-
+            pBttn.current.onclick = (e)=>{
+                if (handleAlert) {
+                    handleAlert.openAction()
+                    handleAlert.textActions({
+                        header: handleAlert.header,
+                        text: handleAlert.text
+                    })
+                }
+                coText.current.innerText = yText
+                endCallback()
+            }
+            nBttn.current.onclick = (e)=>{
+                coText.current.innerText = nText
+                endCallback()
+            }
 
             window.onkeydown = (e) => {
                 if (currentPropmt_Man === id) {
                     if (e.key == 'y') {
-                        if(handleAlert){
+                        if (handleAlert) {
                             handleAlert.openAction()
                             handleAlert.textActions({
                                 header: handleAlert.header,
@@ -125,22 +141,24 @@ export function TypePropmt(props) {
         }
 
         function endCallback() {
-           if(action){
+            if (action) {
                 action(next)
                 type.hideCursor()
                 currentPropmt_Man = next
                 console.log(currentPropmt_Man)
-           }else{
-            console.log('list done');
-           }
-            
+            } else {
+                console.log('list done');
+            }
+
         }
 
     }, [getId])
 
     return (
         <>
-            <div className="textBox" ref={textBox}>
+        <div className="tmainPr" ref={textBox}>
+            
+        <div className="textBoxProp">
                 <div className="box_TextBox">
                     <div className="dotCount"></div>
                     <div className="textType">
@@ -150,13 +168,28 @@ export function TypePropmt(props) {
                 <div className="completBox">
                     <i><p ref={coText}></p></i>
                 </div>
+
+                
             </div>
+            <div className="pbuton">
+                    <div className="bttnwrap_Prop">
+                        <div className="bttnsProps" ref={pBttn}>
+                            <p>{yBttnText}</p>
+                        </div>
+                        <div className="bttnsProps" ref={nBttn}>
+                            <p>No</p>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
         </>
     )
 }
 
 export function GraphicSection(props) {
-    const {children, next, action , getId, id , className} = props
+    const { children, next, action, getId, id, className } = props
     const graphSec = useRef()
     useEffect(() => {
         if (id == getId) {
@@ -182,7 +215,7 @@ export function GraphicSection(props) {
         <>
             <section className={`graphSec ${className}`} ref={graphSec}>
                 <div className="grapicLine"></div>
-                {children? children :(
+                {children ? children : (
                     <>
                         <br />
                         <br />
@@ -194,18 +227,18 @@ export function GraphicSection(props) {
     )
 }
 
- 
-export function typeTab(){
-    return(syntax('red', ' ') +syntax('red', ' ') +syntax('red', ' ') +syntax('red', ' ') +syntax('red', ' ') +syntax('red', ' '))
+
+export function typeTab() {
+    return (syntax('red', ' ') + syntax('red', ' ') + syntax('red', ' ') + syntax('red', ' ') + syntax('red', ' ') + syntax('red', ' '))
 }
-export function syntax(className, text){
-    return(
+export function syntax(className, text) {
+    return (
         `~<span class='${className}'>${text}</span>~`
     )
 }
 
-export function Footer(props){
-    const { next, action , getId, id } = props
+export function Footer(props) {
+    const { next, action, getId, id } = props
     const graphSec = useRef()
     useEffect(() => {
         if (id == getId) {
@@ -226,7 +259,7 @@ export function Footer(props){
             console.log('list done')
         }
     }
-    return(
+    return (
         <footer>
             <div id={id} className="footerWrap" ref={graphSec}>
                 <p>@HypeDeveloper</p>
@@ -239,14 +272,14 @@ export function Footer(props){
 
 import '../style/components/tools.css'
 
-export function GridDots(){
+export function GridDots() {
     const gridParent = useRef()
 
     const colorList = [
-       '#FF005C', '#FF7223', '#FFCA42', '#C342FF', '#5CFF42', '#7DE8FF'
+        '#FF005C', '#FF7223', '#FFCA42', '#C342FF', '#5CFF42', '#7DE8FF'
     ]
 
-    function createDots(){
+    function createDots() {
         let dots = document.createElement('div')
         let innerDot = document.createElement('div')
 
@@ -256,32 +289,42 @@ export function GridDots(){
 
         dots.append(innerDot)
 
-        dots.addEventListener('mouseenter', ()=>{
+        dots.addEventListener('mouseenter', () => {
             innerDot.style.background = colorList[Math.floor(Math.random() * 6)]
             innerDot.style.opacity = 1
             innerDot.style.height = '8px'
             innerDot.style.width = '8px'
 
-            setTimeout(()=>{
+            setTimeout(() => {
                 innerDot.style.background = 'white'
-            innerDot.style.height = '3.5px'
-            innerDot.style.width = '3.5px'
+                innerDot.style.height = '3.5px'
+                innerDot.style.width = '3.5px'
 
                 innerDot.style.opacity = 0.2
-            },2000)
+            }, 2000)
         })
         gridParent.current.append(dots)
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         for (let i = 0; i < 300; i++) {
             createDots()
         }
     }, [])
 
-    return(
+    return (
         <div className="gridHolder" ref={gridParent}>
 
         </div>
+    )
+}
+
+
+export function PropButton() {
+
+    return (
+        <>
+
+        </>
     )
 }

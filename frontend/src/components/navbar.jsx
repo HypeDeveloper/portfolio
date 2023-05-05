@@ -16,7 +16,9 @@ export default function NavBar() {
             <nav>
                 <div className="navgroup">
                     <div className="logoSection">
+                        <Link to='/'>
                         <LogoEye zoom='45%' action='none' />
+                        </Link>
                     </div>
 
                     <div className="hamSection" onClick={handleNavList}>

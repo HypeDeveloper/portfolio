@@ -46,6 +46,26 @@
     background: green;
 }
 
+
+/* project ID */
+.fullImage{
+    height: 600px ;
+    width: 75vw;
+    background: #FF7223;
+    margin-top: 40px;
+    position: relative;
+
+}
+.linktoSite{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    background: #FF005C;
+    bottom: 40px;
+    right: 40px;
+    position: absolute;
+}
+
 @media screen and (max-width: 600px) {
 
     .imgProj_wrap{
@@ -77,5 +97,16 @@
     }
     .techBttn{
         padding: 30px 20px;
+    }
+    .fullImage{
+        height: 300px ;
+        width: 85vw;
+    
+    }
+    .linktoSite{
+        height: 60px;
+        width: 60px;
+        bottom: 20px;
+        right: 20px;
     }
 }

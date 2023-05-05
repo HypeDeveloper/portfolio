@@ -151,3 +151,18 @@ footer p{
     opacity: 0.5;
 }
 
+.justfous{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapfours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tmainPr{
+    display: none;
+}

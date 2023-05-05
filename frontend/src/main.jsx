@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Route, Routes, useActionData } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { MainLoading } from './components/loading'
 import Home from './pages/home'
 import { Layout } from './pages/layouts'
@@ -16,6 +16,7 @@ import Contacts from './pages/contacts'
 import './style/main.css'
 import './style/responsive.css'
 import { ProjectId } from './pages/projectId'
+import NotFound from './pages/404'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -59,6 +60,8 @@ function RouteLayout() {
             </Route>
             <Route path='contact' element={<Contacts />} />
           </Route>
+          <Route path='404' element={<NotFound/>}/>
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
     </>

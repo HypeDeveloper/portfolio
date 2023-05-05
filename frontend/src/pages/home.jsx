@@ -1,9 +1,4 @@
-
 import { useEffect, useRef, useState } from "react";
-import LogoEye from "../components/logo";
-import NavBar from "../components/navbar";
-
-import PropmtBlock from "../components/propmt";
 import { Footer, GraphicSection, syntax, TypePropmt, TypeText } from "../components/tools";
 import { homeCodes } from "../components/util/codeBlocks.js";
 // styles

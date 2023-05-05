@@ -105,12 +105,12 @@ export const homeCodes = {
     ],
     block8: [
         {
-            text: syntax('pur', '>> ') + syntax('yel', ' hypeDev') + '.' + syntax('grn', 'generateContacts') + syntax('blu', '(') + syntax('blu', ')'),
+            text: syntax('yel', ' hypeDev') + '.' + syntax('grn', 'generateContacts') + syntax('blu', '(') + syntax('blu', ')'),
             id: 'code22',
             next: 'code23',
         },
         {
-            text: syntax('pur', '>> ') + syntax('yel', ' hypeDev') + '.' + syntax('grn', 'generateFooter') + syntax('blu', '(') + syntax('blu', ')'),
+            text: syntax('yel', ' hypeDev') + '.' + syntax('grn', 'generateFooter') + syntax('blu', '(') + syntax('blu', ')'),
             id: 'code23',
             next: 'code24',
         }
@@ -152,11 +152,13 @@ export const aboutCodes = {
     ],
     block2: [
         {
-            text: syntax('pur', ' >> ') + syntax('grn', 'Download resume ') + syntax('opp',' y(yes) n(no)'),
+            text: syntax('pur', ' >> ') + syntax('grn', 'Download resume '),
             id: 'prop1',
             next: 'code5',
             yText: 'Hope To Hear from you soon 😊✨',
             nText: 'Ok i am still open for gigs',
+            yBttn: "Yes: Get the Resume"
+            action: 
         }
     ],
     block3: [
@@ -175,11 +177,12 @@ export const aboutCodes = {
     ],
     block5: [
         {
-            text: syntax('pur', ' >> ') + syntax('yel', 'Hey!! Seeing is Believing ') + syntax('opp',' y(View Projects) n(Leter)'),
+            text: syntax('pur', ' >> ') + syntax('yel', 'Hey!! Seeing is Believing '),
             id: 'code9',
             next: 'code10',
             yText: 'Opening Projects ---',
             nText: 'You are really missing out 😱😱',
+            yBttn: "Yes: View Projects"
         }
     ],
     block6: [
@@ -191,11 +194,12 @@ export const aboutCodes = {
     ],
     block7: [
         {
-            text: syntax('pur', ' >> ') + syntax('yel', 'Reach out to David ') + syntax('opp',' y(Yiew Contacts) n(Later)'),
+            text: syntax('pur', ' >> ') + syntax('yel', 'Reach out to David '),
             id: 'code12',
             next: 'code13',
-            yText: 'Opening Projects ---',
+            yText: 'Redirecting to contact page',
             nText: 'You are really missing out 😱😱',
+            yBttn: "Yes: Contact David"
         }
     ],
     block8: [
@@ -229,7 +233,7 @@ export const contactsCodes = {
     ],
     block7: [
         {
-            text: syntax('pur', ' >> ') + syntax('yel', 'Download my Resume') + syntax('opp',' y(Yiew Contacts) n(Later)'),
+            text: syntax('pur', ' >> ') + syntax('yel', 'Download  Resume') + syntax('opp',' y(Yes) n(Later)'),
             id: 'code5',
             next: 'code6',
             yText: 'Opening Projects ---',
@@ -264,4 +268,22 @@ export const projectCodes = {
             next: 'code4',
         },
     ]
+}
+
+
+export const projectIdCodes = {
+    block1: [
+        {
+            text: syntax('yel', ' hypeDev') + '.' + syntax('grn', 'getProjectFromUrl') + syntax('blu', '(') + syntax('blu', ')'),
+            id: 'code1',
+            next: 'code2',
+        }
+    ],
+    block2: [
+        {
+            text: syntax('yel', ' hypeDev') + '.' + syntax('grn', 'codeStackUsed') + syntax('blu', '(') + syntax('blu', ')'),
+            id: 'code3',
+            next: 'code4',
+        }
+    ],
 }
