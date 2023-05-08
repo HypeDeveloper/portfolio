@@ -125,3 +125,8 @@ nav{
         width: 0%;
     }
 }
+.bottomNavList{
+    display: flex;
+    gap: 20px;
+    padding: 80px 40px 0;
+}

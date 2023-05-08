@@ -67,7 +67,7 @@ export function TypeText(props) {
 }
 
 export function TypePropmt(props) {
-    const { yBttnText, action, setP, text, getId, id, currentP, handleAlert, yText, nText, next, pressed } = props
+    const { propAction, yBttnText, action, setP, text, getId, id, currentP, handleAlert, yText, nText, next, pressed } = props
 
     const textBox = useRef()
     const codes = useRef()
@@ -91,7 +91,7 @@ export function TypePropmt(props) {
         if (codes.current.children.length < 1) {
             type.text = text
             if (id == getId) {
-                textBox.current.scrollIntoView({ behavior: "smooth", block: "end", inline: "start" });
+                textBox.current.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
                 textBox.current.style.display = 'block'
                 type.start()
             }
@@ -125,6 +125,7 @@ export function TypePropmt(props) {
                             })
                         }
                         coText.current.innerText = yText
+                        propAction()
                         endCallback()
                     } else {
                         if (e.key == 'n') {
@@ -165,15 +166,16 @@ export function TypePropmt(props) {
                         <code id={props.id} ref={codes}></code>
                     </div>
                 </div>
+                
                 <div className="completBox">
                     <i><p ref={coText}></p></i>
                 </div>
-
                 
             </div>
+            
             <div className="pbuton">
                     <div className="bttnwrap_Prop">
-                        <div className="bttnsProps" ref={pBttn}>
+                        <div className="bttnsProps" ref={pBttn} onClick={propAction}>
                             <p>{yBttnText}</p>
                         </div>
                         <div className="bttnsProps" ref={nBttn}>

@@ -23,9 +23,9 @@ export default function Projects() {
         else {
             return (arrayBlock.map(element => {
                 return (
-                    <TypePropmt
-                        text={element.text} key={element.id} id={element.id} getId={currentId} nText={element.nText} action={setId}
-                        yText={element.yText} next={element.next} setP={setPropmt} currentP={currentPropmt}
+                    <TypePropmt yBttnText={element.yBttn} propAction={element.action}
+                        text={element.text} key={element.id} className={`propIn_${element.id}`} id={element.id} getId={currentId} nText={element.nText} action={setId}
+                        yText={element.yText}  next={element.next} setP={setPropmt} currentP={currentPropmt}
                     />
                 )
             }))
@@ -34,8 +34,7 @@ export default function Projects() {
 
     const projects = myProjects.map((e) => {
         return (
-            <>
-                <div className="projectsCards_group">
+                <div key={e.name} className="projectsCards_group">
 
                     <div className="projectWorks">
                         <div className="imgBox_project">
@@ -74,7 +73,6 @@ export default function Projects() {
                         </div>
                     </div>
                 </div>
-            </>
         )
     })
 

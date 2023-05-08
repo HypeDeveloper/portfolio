@@ -17,7 +17,7 @@ export default function NavBar() {
                 <div className="navgroup">
                     <div className="logoSection">
                         <Link to='/'>
-                        <LogoEye zoom='45%' action='none' />
+                            <LogoEye zoom='45%' action='none' />
                         </Link>
                     </div>
 
@@ -76,6 +76,19 @@ export default function NavBar() {
                                 <div className="lineNs"></div>
                             </div>
                         </div>                    </Link>
+
+                </div>
+
+                <div className="bottomNavList">
+                    <div className="socialBox">
+                        <div className="boxSocial"></div>
+                    </div>
+                    <div className="socialBox">
+                        <div className="boxSocial"></div>
+                    </div>
+                    <div className="socialBox">
+                        <div className="boxSocial"></div>
+                    </div>
                 </div>
             </div>
         </>

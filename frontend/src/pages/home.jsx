@@ -11,16 +11,7 @@ import { gsap } from "gsap";
 export default function Home() {
     const [currentId, setId] = useState('code1')
     const [currentPropmt, setPropmt] = useState(null)
-    
 
-    useEffect(()=>{
-
-        // desktop
-        let moveableArea = document.getElementById('topName')
-        onscroll = (e)=>{
-            window.scrollY
-        }
-    }, [])
 
     function TypeTexts(arrayBlock, type) {
         if (type == 'text') {
@@ -33,9 +24,9 @@ export default function Home() {
         else {
             return (arrayBlock.map(element => {
                 return (
-                    <TypePropmt
-                        text={element.text} key={element.id} id={element.id} getId={currentId} nText={element.nText} action={setId}
-                        yText={element.yText} next={element.next} setP={setPropmt} currentP={currentPropmt}
+                    <TypePropmt yBttnText={element.yBttn} propAction={element.action}
+                        text={element.text} key={element.id} className={`propIn_${element.id}`} id={element.id} getId={currentId} nText={element.nText} action={setId}
+                        yText={element.yText}  next={element.next} setP={setPropmt} currentP={currentPropmt}
                     />
                 )
             }))
@@ -107,8 +98,11 @@ export default function Home() {
 
                 <GraphicSection id='code15' getId={currentId} next='code16' action={setId}>
                     <div className="heroOne_Wrap">
-                        <h2>Some of my best projects</h2>
-                        
+                        {/* <h2>All of my best projects</h2> */}
+                        <h1>
+                            Don't be 
+                        </h1>
+                        <h1>BORING</h1>
                     </div>
                 </GraphicSection>
 

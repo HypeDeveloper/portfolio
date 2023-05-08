@@ -31,6 +31,7 @@
 }
 .pbuton{
     display: flex;
+    width: 100vw;
     /* justify-content: flex-end; */
     /* position: absolute; */
     z-index: 999999;
@@ -61,7 +62,7 @@
 
 @media screen  and (max-width: 600px){
     .dots_grid{
-        margin: 5vw;
+        margin: 1vw;
     }
     .pbuton{
         

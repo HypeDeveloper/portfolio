@@ -1,4 +1,5 @@
 import { syntax, typeTab } from "../tools";
+import { testAction, viewContacts, viewProjects } from "./actions";
 
 export const homeCodes = {
     block1: [
@@ -20,11 +21,13 @@ export const homeCodes = {
     ],
     block2: [
         {
-            text: syntax('pur', ' >> ') + syntax('grn', 'Download resume ') + syntax('opp',' y(yes) n(no)'),
+            text: syntax('pur', ' >> ') + syntax('grn', 'Download resume '),
             id: 'prop1',
             next: 'code5',
             yText: 'Hope To Hear from you soon 😊✨',
             nText: 'Ok i am still open for gigs',
+            yBttn: "Yes: Get Resume",
+            action: testAction
         }
     ],
     block3: [
@@ -82,11 +85,12 @@ export const homeCodes = {
     ],
     block6:[
         {
-            text: syntax('pur', '>> ') + syntax('grn', ' Wish to procced ') + syntax('opp', 'y(yes) n(No)'), 
+            text: syntax('pur', '>> ') + syntax('grn', ' Wish to procced '), 
             id: 'code17',
             next: 'code18',
             yText: 'Ok, lets get started 🎉😎',
             nText: 'Nah you hav to see this 😜😋',
+            yBttn: "Yes: Show me"
         }
     ],
     loading2: [
@@ -157,8 +161,8 @@ export const aboutCodes = {
             next: 'code5',
             yText: 'Hope To Hear from you soon 😊✨',
             nText: 'Ok i am still open for gigs',
-            yBttn: "Yes: Get the Resume"
-            action: 
+            yBttn: "Yes: Get Resume",
+            action: testAction
         }
     ],
     block3: [
@@ -182,7 +186,8 @@ export const aboutCodes = {
             next: 'code10',
             yText: 'Opening Projects ---',
             nText: 'You are really missing out 😱😱',
-            yBttn: "Yes: View Projects"
+            yBttn: "Yes: View Projects",
+            action: viewProjects
         }
     ],
     block6: [
@@ -199,7 +204,8 @@ export const aboutCodes = {
             next: 'code13',
             yText: 'Redirecting to contact page',
             nText: 'You are really missing out 😱😱',
-            yBttn: "Yes: Contact David"
+            yBttn: "Yes: Contact David",
+            action: viewContacts
         }
     ],
     block8: [
@@ -233,11 +239,13 @@ export const contactsCodes = {
     ],
     block7: [
         {
-            text: syntax('pur', ' >> ') + syntax('yel', 'Download  Resume') + syntax('opp',' y(Yes) n(Later)'),
+            text: syntax('pur', ' >> ') + syntax('yel', 'Download  Resume') ,
             id: 'code5',
             next: 'code6',
             yText: 'Opening Projects ---',
             nText: 'You are really missing out 😱😱',
+            yBttn: "Yes: Get Resume",
+            action: testAction
         }
     ],
     block8: [

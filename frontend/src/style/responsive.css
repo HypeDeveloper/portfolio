@@ -49,7 +49,7 @@
         padding: 20px 0 0;
     }
     .AnimeName{
-        font-size: 4rem;
+        font-size: 4.35em;
         /* position: absolute; */
     }
     .AnimeName:nth-child(2){
@@ -65,7 +65,7 @@
     }
     .bottomName_home h1{
         display: flex;
-        font-size: 2.8rem;
+        font-size: 3.1rem;
     }
 
 
@@ -108,5 +108,10 @@
 
     .socialBox p{
         font-size: 1.1rem;
+    }
+    .bottomNavList{
+        display: flex;
+        gap: 20px;
+        padding: 80px 80px 0;
     }
 }

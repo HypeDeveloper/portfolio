@@ -17,6 +17,7 @@ import './style/main.css'
 import './style/responsive.css'
 import { ProjectId } from './pages/projectId'
 import NotFound from './pages/404'
+import Upload from './pages/upload'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -60,6 +61,7 @@ function RouteLayout() {
             </Route>
             <Route path='contact' element={<Contacts />} />
           </Route>
+          <Route path='/upload' element={<Upload />}/>
           <Route path='404' element={<NotFound/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Routes>

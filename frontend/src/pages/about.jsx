@@ -10,14 +10,6 @@ export default function About() {
     const [currentId, setId] = useState('code1')
     const [currentPropmt, setPropmt] = useState(null)
 
-    const [propKey, setPropKey] = useState('')
-    const commandArray = [
-        {
-            id: 'prop1',
-            command: testAction
-        }
-    ]
-
     function TypeTexts(arrayBlock, type) {
         if (type == 'text') {
             return (arrayBlock.map(element => {
@@ -29,7 +21,7 @@ export default function About() {
         else {
             return (arrayBlock.map(element => {
                 return (
-                    <TypePropmt yBttnText={element.yBttn}
+                    <TypePropmt yBttnText={element.yBttn} propAction={element.action}
                         text={element.text} key={element.id} className={`propIn_${element.id}`} id={element.id} getId={currentId} nText={element.nText} action={setId}
                         yText={element.yText}  next={element.next} setP={setPropmt} currentP={currentPropmt}
                     />

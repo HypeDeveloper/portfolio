@@ -22,9 +22,9 @@ export default function Contacts(){
         else {
             return (arrayBlock.map(element => {
                 return (
-                    <TypePropmt
-                        text={element.text} key={element.id} id={element.id} getId={currentId} nText={element.nText} action={setId}
-                        yText={element.yText} next={element.next} setP={setPropmt} currentP={currentPropmt}
+                    <TypePropmt yBttnText={element.yBttn} propAction={element.action}
+                        text={element.text} key={element.id} className={`propIn_${element.id}`} id={element.id} getId={currentId} nText={element.nText} action={setId}
+                        yText={element.yText}  next={element.next} setP={setPropmt} currentP={currentPropmt}
                     />
                 )
             }))
