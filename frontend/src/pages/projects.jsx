@@ -88,7 +88,7 @@ export default function Projects() {
                 <GraphicSection id='code4' getId={currentId} next='prop1' action={setId}>
                     <div className="heroOne_Wrap">
                         <h1>My </h1>
-                        <h1>Project</h1>
+                        <h1>Projects</h1>
                         <br />
 
                         <div className="worksWrap">

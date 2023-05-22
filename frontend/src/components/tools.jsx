@@ -79,7 +79,7 @@ export function TypePropmt(props) {
         setP(id)
         const type = new Typist({
             targetId: id,
-            typeSpeed: 80,
+            typeSpeed: 50,
             delSpeed: 80,
             cursorString: "_",
             cusourClass: "cusourClass",
